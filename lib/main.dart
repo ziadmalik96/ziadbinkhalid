@@ -27,7 +27,7 @@ class MyAppState extends State<MyApp> {
       providers: [
         ChangeNotifierProvider(create: (_) => AppProvider()),
         ChangeNotifierProvider(create: (_) => DrawerProvider()),
-        ChangeNotifierProvider(create: (_) => ScrollProvider()),
+        ChangeNotifierProvider(create: (_)  => ScrollProvider()),
       ],
       child: Consumer<AppProvider>(
         builder: (context, value, _) => MaterialChild(
@@ -40,6 +40,7 @@ class MyAppState extends State<MyApp> {
 
 class MaterialChild extends StatefulWidget {
   final AppProvider provider;
+
   const MaterialChild({Key? key, required this.provider}) : super(key: key);
 
   @override
@@ -62,7 +63,7 @@ class _MaterialChildState extends State<MaterialChild> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Ziad Bin Khalid',
+      title: 'Ziad',
       theme: theme.themeLight,
       darkTheme: theme.themeDark,
       themeMode: widget.provider.themeMode,
