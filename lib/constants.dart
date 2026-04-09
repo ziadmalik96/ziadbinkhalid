@@ -9,8 +9,23 @@ void openURL(String url) => launchUrl(
 final kTools = [
   "Flutter",
   "Dart",
-  "Java",
+  "React Native",
+  "Android SDK",
   "Kotlin",
-  "JavaScript",
-  "C++",
+  "Java",
+  "Swift",
+  "Firebase",
+  "REST APIs",
+  "Clean Architecture",
+  "State Management",
+  "CI/CD",
+];
+
+final kAiTools = [
+  "GitHub Copilot",
+  "ChatGPT",
+  "Claude",
+  "Codex",
+  "Cursor",
+  "AI Workflows",
 ];

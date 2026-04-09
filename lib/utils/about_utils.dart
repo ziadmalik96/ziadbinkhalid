@@ -1,7 +1,7 @@
 class AboutUtils {
   static const String aboutMeHeadline =
-      'I\'m Ziad Bin Khalid, a Senior Flutter developer & a Technical Mobile App Lead';
+      'I\'m Ziad Bin Khalid, a mobile product engineer who can take ideas from concept to launch across Flutter, React Native, Android, and iOS.';
 
   static const String aboutMeDetail =
-      '🌟 IT graduate from the University of Sargodha with 4+ years in mobile app development & created more than 40 apps in my carrier. Senior Flutter Developer at Wild Fork Foods, US. Thrive on crafting digital solutions and driving innovation.';
+      'I build production-ready mobile apps with strong architecture, fast execution, and clean code. From cross-platform delivery to native experiences, AI-powered features, backend integrations, and performance optimization, I bring the full mobile package for teams that want real products shipped well.';
 }

@@ -95,12 +95,22 @@ class HomeDesktop extends StatelessWidget {
                       AnimatedTextKit(
                         animatedTexts: [
                           TyperAnimatedText(
-                            'Senior Flutter Developer',
+                            'Senior Mobile Engineer',
                             speed: const Duration(milliseconds: 50),
                             textStyle: AppText.b1,
                           ),
                           TyperAnimatedText(
-                            ' Android Native Developer',
+                            ' Senior Flutter Developer',
+                            speed: const Duration(milliseconds: 50),
+                            textStyle: AppText.b1,
+                          ),
+                          TyperAnimatedText(
+                            ' React Native Developer',
+                            speed: const Duration(milliseconds: 50),
+                            textStyle: AppText.b1,
+                          ),
+                          TyperAnimatedText(
+                            ' Android Kotlin/Java Engineer',
                             speed: const Duration(milliseconds: 50),
                             textStyle: AppText.b1,
                           ),
