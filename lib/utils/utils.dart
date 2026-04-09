@@ -38,12 +38,12 @@ class StaticUtils {
   static const List<String> socialLinks = [
     "https://www.facebook.com/ziad.malik.946/",
     "https://www.instagram.com/ziadmalik/",
-    "https://www.linkedin.com/in/ziad-malik-bb4772164/",
+    "https://www.linkedin.com/in/ziad-bin-khalid-bb4772164/",
     "https://github.com/ziadmalik96",
   ];
 
   static const String resume =
-      'https://drive.google.com/file/d/1hGS5uK1BsDkFKiHhTFaV1E7_zN15IbXF/view?usp=sharing';
+      'https://drive.google.com/file/d/1zGLrkpcnbtIT5UWqhcXfCSQ7kxEzwBOk/view';
 
   static const String gitHub = 'https://github.com/ziadmalik96';
 }
