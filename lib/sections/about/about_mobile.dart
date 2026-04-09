@@ -78,9 +78,29 @@ class AboutMobile extends StatelessWidget {
             ),
           ),
           Space.y!,
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+          Wrap(
+            alignment: WrapAlignment.center,
+            spacing: AppDimensions.normalize(2),
+            runSpacing: AppDimensions.normalize(2),
             children: kTools
+                .map(
+                  (e) => ToolTechWidget(techName: e),
+                )
+                .toList(),
+          ),
+          Space.y!,
+          Text(
+            'AI tools in my workflow:',
+            style: AppText.l1!.copyWith(
+              color: AppTheme.c!.primary,
+            ),
+          ),
+          Space.y!,
+          Wrap(
+            alignment: WrapAlignment.center,
+            spacing: AppDimensions.normalize(2),
+            runSpacing: AppDimensions.normalize(2),
+            children: kAiTools
                 .map(
                   (e) => ToolTechWidget(techName: e),
                 )
@@ -99,8 +119,16 @@ class AboutMobile extends StatelessWidget {
             information: "Ziad Bin Khalid",
           ),
           const AboutMeData(
+            data: "Age",
+            information: "30",
+          ),
+          const AboutMeData(
             data: "Email",
             information: "ziadofficialdesigner@gmail.com",
+          ),
+          const AboutMeData(
+            data: "Speciality",
+            information: "Scalable Mobile Apps & Technical Solutions",
           ),
           Space.y!,
           OutlinedButton(

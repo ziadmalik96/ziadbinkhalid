@@ -13,7 +13,7 @@ class ServiceMobile extends StatelessWidget {
           text: '\nWhat I can do?',
         ),
         const CustomSectionSubHeading(
-          text: 'I may not be perfect but surely I\'m of some use :)\n\n',
+          text: 'From mobile products to AI-powered features and technical direction, I build things that actually ship.\n\n',
         ),
         Space.y!,
         CarouselSlider.builder(

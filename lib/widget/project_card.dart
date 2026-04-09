@@ -29,6 +29,8 @@ class ProjectCard extends StatefulWidget {
 class ProjectCardState extends State<ProjectCard> {
   bool isHover = false;
 
+  bool get _usesContainedBanner => widget.banner?.endsWith('nwfit.png') ?? false;
+
   @override
   Widget build(BuildContext context) {
     final appProvider = Provider.of<AppProvider>(context);
@@ -144,14 +146,27 @@ class ProjectCardState extends State<ProjectCard> {
             AnimatedOpacity(
               duration: const Duration(milliseconds: 400),
               opacity: isHover ? 0.0 : 1.0,
-              child: FittedBox(
-                fit: BoxFit.fill,
-                child: widget.banner != null
-                    ? Image.asset(
-                        widget.banner!,
-                      )
-                    : Container(),
-              ),
+              child: widget.banner == null
+                  ? Container()
+                  : _usesContainedBanner
+                      ? Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          alignment: Alignment.center,
+                          padding: EdgeInsets.all(AppDimensions.normalize(4)),
+                          child: Image.asset(
+                            widget.banner!,
+                            fit: BoxFit.contain,
+                          ),
+                        )
+                      : FittedBox(
+                          fit: BoxFit.fill,
+                          child: Image.asset(
+                            widget.banner!,
+                          ),
+                        ),
             ),
           ],
         ),

@@ -3,25 +3,19 @@ import 'package:portfolioziad/utils/utils.dart';
 class ServicesUtils {
   static const List<String> servicesIcons = [
     StaticUtils.appDev,
-    // StaticUtils.uiux,
     StaticUtils.rapid,
-    // StaticUtils.blog,
-    StaticUtils.openSource,
+    StaticUtils.uiux,
   ];
 
   static const List<String> servicesTitles = [
     "Mobile App Development",
-    // "UI/UX Designing",
-    "Rapid Prototyping",
-    // "Technical Blog Writing",
-    "Open Source - GitHub",
+    "AI-Powered Features",
+    "Technical Solutions",
   ];
 
   static const List<String> servicesDescription = [
-    "Android app development via Flutter\n- Splash Screen\n- Firebase Auth/Cloud\n- REST APIs\n- Maps integration and more...!",
-    // "Modern UI/UX Designing\n- Adobe XD\n- Mobile & Web designs\n- Interactive UI designs\n- Responsiveness\n- Promo Videos and more..!",
-    "Rapid Prototype via Flutter\n- Working MVP\n- Quick & Working prototype",
-    // "Technical Blog writing\n- Medium blogs\n- Soothing header images\n- SEO friendly\n- Researched topics and more..!",
-    "Open source GitHub Projects\n- Awesome README.md\n- Well documented\n- Header images and more...!",
+    "Production-grade mobile apps\n- Flutter, React Native, Android Kotlin/Java\n- Clean architecture and scalable codebases\n- APIs, payments, auth, maps and shipping-ready releases",
+    "Vibe coding with real outcomes\n- AI-assisted workflows that move fast\n- Smart automations and AI-powered user experiences\n- MVPs, experiments and feature delivery without the chaos",
+    "Clear technical direction for clients\n- Product thinking plus engineering execution\n- Architecture decisions, scope shaping and delivery planning\n- Turning ideas into practical, buildable solutions",
   ];
 }

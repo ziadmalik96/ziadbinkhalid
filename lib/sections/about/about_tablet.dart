@@ -78,8 +78,28 @@ class AboutTab extends StatelessWidget {
               color: AppTheme.c!.primary,
             ),
           ),
-          Row(
+          Space.y!,
+          Wrap(
+            spacing: AppDimensions.normalize(2),
+            runSpacing: AppDimensions.normalize(2),
             children: kTools
+                .map(
+                  (e) => ToolTechWidget(techName: e),
+                )
+                .toList(),
+          ),
+          Space.y!,
+          Text(
+            'AI tools in my workflow:',
+            style: AppText.l1!.copyWith(
+              color: AppTheme.c!.primary,
+            ),
+          ),
+          Space.y!,
+          Wrap(
+            spacing: AppDimensions.normalize(2),
+            runSpacing: AppDimensions.normalize(2),
+            children: kAiTools
                 .map(
                   (e) => ToolTechWidget(techName: e),
                 )
@@ -102,7 +122,7 @@ class AboutTab extends StatelessWidget {
                   ),
                   AboutMeData(
                     data: "Age",
-                    information: "28",
+                    information: "30",
                   ),
                 ],
               ),
@@ -117,8 +137,8 @@ class AboutTab extends StatelessWidget {
                     information: "ziadofficialdesigner@gmail.com",
                   ),
                   AboutMeData(
-                    data: "From",
-                    information: "Lahore, PK",
+                    data: "Speciality",
+                    information: "Scalable Mobile Apps & Technical Solutions",
                   ),
                 ],
               ),

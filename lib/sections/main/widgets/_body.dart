@@ -9,10 +9,20 @@ class _Body extends StatelessWidget {
   Widget build(BuildContext context) {
     final scrollProvider = Provider.of<ScrollProvider>(context);
 
-    return ListView.builder(
+    return SingleChildScrollView(
       controller: scrollProvider.controller,
-      itemCount: BodyUtils.views.length,
-      itemBuilder: (context, index) => BodyUtils.views[index],
+      child: Column(
+        children: BodyUtils.views
+            .asMap()
+            .entries
+            .map(
+              (entry) => KeyedSubtree(
+                key: scrollProvider.sectionKeys[entry.key],
+                child: entry.value,
+              ),
+            )
+            .toList(),
+      ),
     );
   }
 }
